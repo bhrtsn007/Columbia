@@ -62,6 +62,8 @@ echo '<div class="vertical-menu"></div><a href="/cgi-bin/pps/all_ppsbinrec.sh" c
 
 echo '<div class="vertical-menu"></div><a href="/cgi-bin/pps/all_empty_bin.sh" class="active"><b>All Empty Bin in System</b></a>'
 
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/pps/packing_issue.sh" class="active"><b>Resume execution from PPS Bin (packing issue fix)</b></a>'
+
 #echo '<div class="vertical-menu"></div><a href="/cgi-bin/pps/reset_ppsbin.sh" class="active"><b>Reset Any PPS Bin</b></a>'
 
 #echo '<div class="vertical-menu"></div><a href="/cgi-bin/pps/reset_all_ppsbin.sh" class="active"><b>Reset All PPS Bin On PPS</b></a>'
