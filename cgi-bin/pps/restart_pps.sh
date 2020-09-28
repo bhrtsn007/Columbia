@@ -2,7 +2,7 @@
 restart_pps () {
     echo "Restarting PPS_ID : $1"
     echo "<br>"
-    sudo /opt/butler_server/bin/butler_server rpcterms pps_organiser restart_pps $1.
+    sudo /opt/butler_server/bin/butler_server rpcterms station_recovery restart_pps $1.
 }
 echo "Content-type: text/html"
 echo ""

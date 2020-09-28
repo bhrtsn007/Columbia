@@ -3,7 +3,7 @@ auditrec () {
     echo "Auditrec : <<'$1'>>  Info "
     echo "<br>"
     echo '<pre>'
-    sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript auditrec get_by_id "[<<\"$1\">>]."      
+    sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript station_recovery audit_summary "[{'audit_id',<<\"$1\">>}]."      
     echo '</pre>'
 }
 echo "Content-type: text/html"

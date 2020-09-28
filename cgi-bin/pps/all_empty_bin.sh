@@ -1,9 +1,9 @@
 #!/bin/bash
 all_empty_bin () {
-    echo "These all Bins are Empty"
+    echo "These all Bins are Empty as per order manager"
     echo "<br>"
     echo '<pre>'
-    sudo /opt/butler_server/bin/butler_server rpcterms ppsbin get_all_empty_bins
+    sudo /opt/butler_server/bin/butler_server rpcterms order_manager get_min_free_ppsbins_list
     echo '</pre>'
 }
 echo "Content-type: text/html"

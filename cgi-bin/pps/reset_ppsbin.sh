@@ -2,7 +2,7 @@
 reset_pps_bin () {
     echo "Resetting BIN ID : $2 of PPS_ID : $1"
     echo "<br>"
-    sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript ppsbin_functions reset_pps_bins "[[{$1,\""$2"\"}]]."
+    sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript station_recovery reset_bins "[{'bins',[{$1,\""$2"\"}]}]."
 }
 echo "Content-type: text/html"
 echo ""

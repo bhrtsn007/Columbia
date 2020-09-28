@@ -11,6 +11,11 @@ task_associated_to_rack () {
         echo '<pre>'
         sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript audittaskrec search_by "[[{'rack','equal',{'rackrec',<<\"$1\">>,0}},{'status', 'notequal', 'complete'}], 'record']."
         echo '</pre>'
+        echo "Msu rearrangement Task associated to this rack"
+        echo "<br>"
+        echo '<pre>'
+        sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript msurearrangementtaskrec search_by "[[{'rack','equal',{'rackrec',<<\"$1\">>,0}},{'status', 'notequal', 'complete'}], 'record']."
+        echo '</pre>'
     elif [ "$2" -eq "1" ]; then
         echo "PPS Task associated to this rack"
         echo "<br>"
@@ -21,6 +26,11 @@ task_associated_to_rack () {
         echo "<br>"
         echo '<pre>'
         sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript audittaskrec search_by "[[{'rack','equal',{'rackrec',<<\"$1\">>,1}},{'status', 'notequal', 'complete'}], 'record']."
+        echo '</pre>'
+        echo "Msu rearrangement Task associated to this rack"
+        echo "<br>"
+        echo '<pre>'
+        sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript msurearrangementtaskrec search_by "[[{'rack','equal',{'rackrec',<<\"$1\">>,1}},{'status', 'notequal', 'complete'}], 'record']."
         echo '</pre>'
     else
         echo "Wrong Face entered"

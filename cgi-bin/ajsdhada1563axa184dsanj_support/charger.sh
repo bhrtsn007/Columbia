@@ -52,6 +52,11 @@ echo '<div class="vertical-menu"></div><a href="/cgi-bin/charger/fix_charger.sh"
 
 echo '<div class="vertical-menu"></div><a href="/cgi-bin/charger/send_charger_init.sh" class="active"><b>Send Init to Charger</b></a>'
 
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/charger/check_commit_id.sh" class="active"><b>Get COMMIT ID for all chargers</b></a>'
+
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/charger/clear_attached_butler.sh" class="active"><b>Clear attached Butler and blocked butler from Charger</b></a>'
+
+
 echo '</body>'
 echo '</html>'
 

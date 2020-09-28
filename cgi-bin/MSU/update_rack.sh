@@ -13,7 +13,7 @@ Rack_position_update () {
             echo "You have type wrong barcode"    
         else
             echo "Updating rack location"
-            sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript rackinfo update_rack_position_with_updates "[<<\"$1\">>,$3,\""$2"\", 'null']." 
+            sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript mhs_operation_utilities update_rack_position "[<<\"$1\">>,$3,\""$2"\", 'null']." 
         fi    
     else
         echo "Please type correct lifted state "

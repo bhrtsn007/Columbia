@@ -41,38 +41,31 @@ echo "<br>"
 echo "<br>"
 
 echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/all_created_order.sh" class="active"><b>All Created Order</b></a>'
-
 echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/all_pending_order.sh" class="active"><b>All Pending Order</b></a>'
 
-echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/all_unprocessable_order.sh" class="active"><b>All Unprocessable Order</b></a>'
-
-echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/all_abandoned_order.sh" class="active"><b>All Abandon Order</b></a>'
-
-echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/all_cancelled_order.sh" class="active"><b>All Cancelled Order</b></a>'
-
 echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/all_temp_unfullilable_order.sh" class="active"><b>All Temp_unfullilable Order</b></a>'
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/temp_unfulfillable_order.sh" class="active"><b>Temporary unfulfillable order detail</b></a>'
 
-echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/specific_order.sh" class="active"><b>Order Details</b></a>'
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/specific_order.sh" class="active"><b>Order Details(External Id from Internal ID)</b></a>'
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/pick_instruction.sh" class="active"><b>Get Pick Instruction from Order ID</b></a>'
+#echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/pbt_breached.sh" class="active"><b>All PBT breach order</b></a>'
 
-echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/order_task_details.sh" class="active"><b>Task Details from Order</b></a>'
-
-#echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/remove_order.sh" class="active"><b>Remove Order</b></a>'
 
 #echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/add_order.sh" class="active"><b>Add Order</b></a>'
-
 #echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/call_order.sh" class="active"><b>Call Order Manager</b></a>'
-
-#echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/change_order_to_unprocessable.sh" class="active"><b>Change Order Status to Unprocessable</b></a>'
-
-#echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/change_order_to_temp_unfullilable.sh" class="active"><b>Change Order Status to Temp_unfullilable</b></a>'
-
-#echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/change_order_to_cancelled.sh" class="active"><b>Change Order Status to Cancelled</b></a>'
-
-#echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/change_order_to_abandon.sh" class="active"><b>Change Order Status to Abandon</b></a>'
-
 #echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/change_order_to_created.sh" class="active"><b>Change Order Status to Created</b></a>'
 
-#echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/abandon_order.sh" class="active"><b>Abandon Any Order</b></a>'
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/abandon_order.sh" class="active"><b>Abandon Any Order</b></a>'
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/cancel_order.sh" class="active"><b>Cancel Order manually</b></a>'
+
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/sideline_order.sh" class="active"><b>Sideline Any Order</b></a>'
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/resume_order.sh" class="active"><b>Resume any Order</b></a>'
+
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/internal_order_id.sh" class="active"><b>Get Internal Order ID</b></a>'
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/order_from_core_platform.sh" class="active"><b>Get Order Status from Core and Platform</b></a>'
+
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/unfulfillable_order_report.sh" class="active"><b>Get Unfulfillable Order Report</b></a>'
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/order/process_unfulfillable_order.sh" class="active"><b>Process Unfulfillable Order</b></a>'
 
 echo '</body>'
 echo '</html>'

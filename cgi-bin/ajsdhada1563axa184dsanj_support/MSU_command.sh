@@ -48,6 +48,16 @@ echo '<div class="vertical-menu"></div><a href="/cgi-bin/MSU/update_rack.sh" cla
 
 echo '<div class="vertical-menu"></div><a href="/cgi-bin/MSU/rack_details_from_coordinates.sh" class="active"><b>Rack Details from Coordinates</b></a>'
 
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/MSU/sku_inventory.sh" class="active"><b>Get Inventory information from SKU ID</b></a>'
+
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/MSU/storage_info.sh" class="active"><b>Specific storage info</b></a>'
+
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/MSU/available_storage.sh" class="active"><b>Available storage info</b></a>'
+
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/MSU/put_block.sh" class="active"><b>Block rack from Put</b></a>'
+
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/MSU/put_unblock.sh" class="active"><b>Unblock rack from Put</b></a>'
+
 #echo  '<div class="vertical-menu"></div><a href="/cgi-bin/MSU/add_rack.sh" class="active"><b>Add New Rack</b></a>'
 
 echo '</body>'

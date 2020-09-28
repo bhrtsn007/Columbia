@@ -2,7 +2,7 @@
 reset_all_pps_bin () {
     echo "Resetting ALL PPS bins for PPS_ID : $1"
     echo "<br>"
-    sudo /opt/butler_server/bin/butler_server rpcterms ppsbin_functions reset_all_pps_bins $1.
+    sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript station_recovery reset_bins "[{'pps',$1}]."
 }
 echo "Content-type: text/html"
 echo ""

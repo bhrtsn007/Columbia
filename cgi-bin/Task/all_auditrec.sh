@@ -1,14 +1,15 @@
 #!/bin/bash
 all_auditrec () {
-    echo "All Audit rec not completed in the system"
+    echo "All Auditrec not completed in the system"
     echo "<br>"
     if [ "$1" -eq "1" ]; then
+      echo "{ok,[[audit_id,display_id,status,updated_time]]}"
       echo '<pre>'
-       sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript auditrec search_by "[[{'status', 'notequal', 'audit_completed'}], 'key']."
+       sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript auditrec search_by "[[{'status', 'notequal', 'audit_completed'},{'status','notequal','audit_resolved'},{'status','notequal','audit_cancelled'},{'status', 'notequal', 'audit_aborted'},{'status','notequal','audit_reaudited'}], ['audit_id','display_id','status','updated_time']]."
        echo '</pre>'
     elif [ "$1" -eq "2" ]; then
       echo '<pre>'
-        sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript auditrec search_by "[[{'status', 'notequal', 'audit_completed'}], 'record']."
+        sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript auditrec search_by "[[{'status', 'notequal', 'audit_completed'},{'status','notequal','audit_resolved'},{'status','notequal','audit_cancelled'},{'status', 'notequal', 'audit_aborted'},{'status','notequal','audit_reaudited'}], 'record']."
         echo '</pre>'
     else
         echo "Wrong key pressed"

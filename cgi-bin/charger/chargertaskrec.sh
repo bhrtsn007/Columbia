@@ -2,6 +2,7 @@
 chargetaskrec_get_all () {
     echo "All Charge Task in the System"
     echo "<br>"
+    echo `whoami`
     echo '<pre>'
     sudo /opt/butler_server/bin/butler_server rpcterms chargetaskrec get_all 
     echo '</pre>'

@@ -78,10 +78,12 @@ else
    username=`echo "$QUERY_STRING" | sed -n 's/^.*username=\([^&]*\).*$/\1/p' | sed "s/%20/ /g"`
    password=`echo "$QUERY_STRING" | sed -n 's/^.*pwd=\([^&]*\).*$/\1/p' | sed "s/%20/ /g"`
 fi
-if [ "$username" = "support" ] && [ "$password" = "apj0702" ]; then
+if [ "$username" = "support" ] && [ "$password" = "mumap0702" ]; then
   echo '<div class="vertical-menu"></div><a href="ajsdhada1563axa184dsanj_support/support_easy_console.sh" class="active"><b>Welcome To Easy Console</b></a>'
-elif [ "$username" = "tac" ] && [ "$password" = "Grey%40123" ]; then
-  echo '<div class="vertical-menu"></div><a href="abdhkojdgjjaa12as23j891dgz1_TAC/tac_easy_console.sh" class="active"><b>Welcome To Easy Console</b></a>'
+elif [ "$username" = "tac" ] && [ "$password" = "Grey%407890" ]; then
+  echo '<div class="vertical-menu"></div><a href="abdadfdafjgjkgvsdf23efsdscs23j891dgz1_TAC/tac_easy_console.sh" class="active"><b>Welcome To Easy Console</b></a>'
+elif [ "$username" = "xpo" ] && [ "$password" = "Xpoxpo" ]; then
+  echo '<div class="vertical-menu"></div><a href="ajsdhada1563axa184dsanj_support/report_easy_console.sh" class="active"><b>Welcome To Easy Console</b></a>'
 else
   echo '<div class="vertical-menu"><h3 style="text-align:center">Wrong Username and Password</h3>'
 fi

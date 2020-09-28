@@ -5,6 +5,16 @@ pps_info_get_by_id () {
     echo '<pre>'
     sudo /opt/butler_server/bin/butler_server rpcterms ppsinfo get_by_id $1.
     echo '</pre>'
+    echo "PPS node for PPS_ID : $1"
+    echo "<br>"
+    echo '<pre>'
+    sudo /opt/butler_server/bin/butler_server rpcterms ppsnode get_by_id $1.
+    echo '</pre>'
+    echo "PPS seat for PPS_ID : $1"
+    echo "<br>"
+    echo '<pre>'
+     sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript pps_seat search_by "[[{'pps_id', 'equal', $1}], 'record']."
+    echo '</pre>'
 }
 echo "Content-type: text/html"
 echo ""

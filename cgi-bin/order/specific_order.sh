@@ -1,11 +1,23 @@
 #!/bin/bash
 order_details () {
-    echo "Order Id : <<'$1'>>  Info"
+    echo "############################################################"
+    echo "Order Id info in readable Format"
+    echo "############################################################"
+    echo "<br>"
+    echo '<pre>'
+    sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript order_node pretty_print "[<<\"$1\">>]."
+    echo '</pre>'
+    echo "<br>"
+    echo "<br>"
+    echo "<br>"
+    echo "############################################################"
+    echo "Order details in Raw Format"
+    echo "############################################################"
     echo "<br>"
     echo '<pre>'
     sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript order_node get_by_id "[<<\"$1\">>]."
     echo '</pre>'
-
+    echo "<br>"
 }
 echo "Content-type: text/html"
 echo ""

@@ -4,11 +4,11 @@ auditlinerec () {
     echo "<br>"
     if [ "$2" -eq "1" ]; then
       echo '<pre>'
-       sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript auditlinerec search_by "[[{'audit_id', 'equal', <<\"$1\">>},{'status', 'notequal', 'audit_completed'}], 'key']."
+       sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript auditlinerec1 search_by "[[{'audit_id', 'equal', <<\"$1\">>}], 'key']."
        echo '</pre>'
     elif [ "$2" -eq "2" ]; then
       echo '<pre>'
-       sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript auditlinerec search_by "[[{'audit_id', 'equal', <<\"$1\">>},{'status', 'notequal', 'audit_completed'}], 'record']."
+       sudo /opt/butler_server/erts-9.3.3.6/bin/escript /home/gor/rpc_call.escript auditlinerec1 search_by "[[{'audit_id', 'equal', <<\"$1\">>}], 'record']."
        echo '</pre>'
     else
         echo "Wrong key pressed"

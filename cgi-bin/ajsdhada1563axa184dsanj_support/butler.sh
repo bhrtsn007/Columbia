@@ -49,15 +49,23 @@ echo '<div class="vertical-menu"></div><a href="/cgi-bin/butler/UnPause_butler.s
 
 echo  '<div class="vertical-menu"></div><a href="/cgi-bin/butler/Purge_butler.sh" class="active"><b>Purge a Butler</b></a>'
 
-echo  '<div class="vertical-menu"></div><a href="/cgi-bin/butler/loop_test_with_count.sh" class="active"><b>Loop test with count</b></a>'
+#echo  '<div class="vertical-menu"></div><a href="/cgi-bin/butler/loop_test_with_count.sh" class="active"><b>Loop test with count</b></a>'
 
 echo  '<div class="vertical-menu"></div><a href="/cgi-bin/butler/loop_test_without_count.sh" class="active"><b>Unlimited Loop Test</b></a>'
+
+echo  '<div class="vertical-menu"></div><a href="/cgi-bin/butler/unlimited_lift_test.sh" class="active"><b>Unlimited Lift Test</b></a>'
 
 echo '<div class="vertical-menu"></div><a href="/cgi-bin/butler/stop_loop.sh" class="active"><b>Stop a loop test</b></a>'
 
 echo '<div class="vertical-menu"></div><a href="/cgi-bin/butler/remrestart.sh" class="active"><b>Remrestart a Butler</b></a>'
 
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/butler/init_butler.sh" class="active"><b>Send Init to One Butler</b></a>'
+
 echo '<div class="vertical-menu"></div><a href="/cgi-bin/butler/get_camera.sh" class="active"><b>Get Camera Information</b></a>'
+
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/butler/init_all_butler.sh" class="active"><b>Send Init to All Butler</b></a>'
+
+echo '<div class="vertical-menu"></div><a href="/cgi-bin/butler/reservation_info.sh" class="active"><b>Reservation Info</b></a>'
 
 echo '</body>'
 echo '</html>'
